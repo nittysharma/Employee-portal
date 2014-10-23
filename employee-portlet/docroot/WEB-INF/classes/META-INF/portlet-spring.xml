@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.itlifter.employee.service.service.CompanyRequestLocalService" class="com.itlifter.employee.service.service.impl.CompanyRequestLocalServiceImpl" />
+	<bean id="com.itlifter.employee.service.service.persistence.CompanyRequestPersistence" class="com.itlifter.employee.service.service.persistence.CompanyRequestPersistenceImpl" parent="basePersistence" />
+	<bean id="com.itlifter.employee.service.service.CompanyTypeMasterLocalService" class="com.itlifter.employee.service.service.impl.CompanyTypeMasterLocalServiceImpl" />
+	<bean id="com.itlifter.employee.service.service.persistence.CompanyTypeMasterPersistence" class="com.itlifter.employee.service.service.persistence.CompanyTypeMasterPersistenceImpl" parent="basePersistence" />
+</beans>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.itlifter.employee.service">
+	<author>Ashish</author>
+	<namespace>employee</namespace>
+<entity name="CompanyRequest" local-service="true"
+		remote-service="false">
+
+		<!-- Primary key column -->
+		<column name="requestId" type="long" primary="true" />
+
+		<!-- Foreign key columns -->
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="userId" type="long" />
+
+		<!-- Other columns -->
+		<column name="cname" type="String" />
+		<column name="ctype" type="String" />
+		<column name="crecursable" type="boolean" />
+		<column name="cregionId" type="long" />
+		<column name="ccountryId" type="long" />
+		<column name="caddress" type="String" />
+		<column name="cphone" type="long" />
+		<column name="cwebsite" type="String" />
+		<column name="cemailAddress" type="String" />
+
+		<!-- sanjiv extra fields -->
+		<!-- for company -->
+		<column name="caddress1" type="String" />
+		<column name="caddress2" type="String" />
+		<column name="carea" type="String" />
+		<column name="ccity" type="String" />
+		<column name="cdistrict" type="String" />
+		<column name="cstate" type="String"></column>
+		<column name="czipcode" type="long"></column>
+		<column name="cfax" type="long"></column>
+
+		<!-- for contact person -->
+		<column name="title" type="String"></column>
+		<column name="firstName" type="String"></column>
+		<column name="lastName" type="String"></column>
+		<column name="designation" type="String"></column>
+		<column name="fax" type="long"></column>
+		<column name="mobile" type="long"></column>
+		<column name="email" type="String"></column>
+		<column name="status" type="String"></column>
+
+
+		<!-- Audit Fields -->
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+		<column name="userName" type="String" />
+
+
+
+
+<!-- extra fields -->
+<column name="exts1" type="String"></column>
+<column name="exts2" type="String"></column>
+<column name="exts3" type="String"></column>
+<column name="exts4" type="String"></column>
+<column name="exts5" type="String"></column>
+<column name="exts6" type="String"></column>
+<column name="exts7" type="String"></column>
+<column name="exts8" type="String"></column>
+<column name="exts9" type="String"></column>
+<column name="extl10" type="long"></column>
+<column name="extl11" type="long"></column>
+<column name="extl12" type="long"></column>
+<column name="extd13" type="Date"></column>
+<column name="extd14" type="Date"></column>
+<column name="extd15" type="Date"></column>
+
+
+
+		<!-- Sort order -->
+		<order by="asc">
+			<order-column name="cname" />
+		</order>
+
+		<!-- Finder Methods -->
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
+		</finder>
+	</entity>
+	
+	<entity	name="CompanyTypeMaster" local-service="true" remote-service="false">
+	<column name="typeId" type="long" primary="true" />
+	<column name="TypeCode" type="String" />
+	<column name="TypeName" type="String"></column>
+	</entity>
+	
+	
+</service-builder>

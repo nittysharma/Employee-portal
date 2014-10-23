@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.itlifter.employee.service.model.CompanyRequest">
+		<field name="requestId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="cname" type="String" />
+		<field name="ctype" type="String" />
+		<field name="crecursable" type="boolean" />
+		<field name="cregionId" type="long" />
+		<field name="ccountryId" type="long" />
+		<field name="caddress" type="String" />
+		<field name="cphone" type="long" />
+		<field name="cwebsite" type="String" />
+		<field name="cemailAddress" type="String" />
+		<field name="caddress1" type="String" />
+		<field name="caddress2" type="String" />
+		<field name="carea" type="String" />
+		<field name="ccity" type="String" />
+		<field name="cdistrict" type="String" />
+		<field name="cstate" type="String" />
+		<field name="czipcode" type="long" />
+		<field name="cfax" type="long" />
+		<field name="title" type="String" />
+		<field name="firstName" type="String" />
+		<field name="lastName" type="String" />
+		<field name="designation" type="String" />
+		<field name="fax" type="long" />
+		<field name="mobile" type="long" />
+		<field name="email" type="String" />
+		<field name="status" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="userName" type="String" />
+		<field name="exts1" type="String" />
+		<field name="exts2" type="String" />
+		<field name="exts3" type="String" />
+		<field name="exts4" type="String" />
+		<field name="exts5" type="String" />
+		<field name="exts6" type="String" />
+		<field name="exts7" type="String" />
+		<field name="exts8" type="String" />
+		<field name="exts9" type="String" />
+		<field name="extl10" type="long" />
+		<field name="extl11" type="long" />
+		<field name="extl12" type="long" />
+		<field name="extd13" type="Date" />
+		<field name="extd14" type="Date" />
+		<field name="extd15" type="Date" />
+	</model>
+	<model name="com.itlifter.employee.service.model.CompanyTypeMaster">
+		<field name="typeId" type="long" />
+		<field name="TypeCode" type="String" />
+		<field name="TypeName" type="String" />
+	</model>
+</model-hints>

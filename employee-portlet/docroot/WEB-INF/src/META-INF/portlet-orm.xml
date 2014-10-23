@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.itlifter.employee.service.model.impl.CompanyRequestModelImpl">
+		<attributes>
+			<id name="requestId" />
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="userId" />
+			<basic name="cname" />
+			<basic name="ctype" />
+			<basic name="crecursable" />
+			<basic name="cregionId" />
+			<basic name="ccountryId" />
+			<basic name="caddress" />
+			<basic name="cphone" />
+			<basic name="cwebsite" />
+			<basic name="cemailAddress" />
+			<basic name="caddress1" />
+			<basic name="caddress2" />
+			<basic name="carea" />
+			<basic name="ccity" />
+			<basic name="cdistrict" />
+			<basic name="cstate" />
+			<basic name="czipcode" />
+			<basic name="cfax" />
+			<basic name="title" />
+			<basic name="firstName" />
+			<basic name="lastName" />
+			<basic name="designation" />
+			<basic name="fax" />
+			<basic name="mobile" />
+			<basic name="email" />
+			<basic name="status" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="userName" />
+			<basic name="exts1" />
+			<basic name="exts2" />
+			<basic name="exts3" />
+			<basic name="exts4" />
+			<basic name="exts5" />
+			<basic name="exts6" />
+			<basic name="exts7" />
+			<basic name="exts8" />
+			<basic name="exts9" />
+			<basic name="extl10" />
+			<basic name="extl11" />
+			<basic name="extl12" />
+			<basic name="extd13">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="extd14">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="extd15">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.itlifter.employee.service.model.impl.CompanyTypeMasterModelImpl">
+		<attributes>
+			<id name="typeId" />
+			<basic name="TypeCode" />
+			<basic name="TypeName" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.itlifter.employee.service.model.impl.CompanyRequestImpl" name="CompanyRequest">
+		<table name="employee_CompanyRequest" />
+		<attributes />
+	</entity>
+	<entity class="com.itlifter.employee.service.model.impl.CompanyTypeMasterImpl" name="CompanyTypeMaster">
+		<table name="employee_CompanyTypeMaster" />
+		<attributes />
+	</entity>
+</entity-mappings>

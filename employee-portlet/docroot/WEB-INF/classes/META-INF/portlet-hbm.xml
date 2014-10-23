@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.itlifter.employee.service.model.CompanyRequest" />
+	<import class="com.itlifter.employee.service.model.CompanyTypeMaster" />
+	<class name="com.itlifter.employee.service.model.impl.CompanyRequestImpl" table="employee_CompanyRequest">
+		<cache usage="read-write" />
+		<id name="requestId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="cname" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ctype" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="crecursable" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="cregionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="ccountryId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="caddress" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cphone" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="cwebsite" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cemailAddress" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="caddress1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="caddress2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="carea" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ccity" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cdistrict" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cstate" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="czipcode" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="cfax" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="firstName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="lastName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="designation" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="fax" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="mobile" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts4" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts5" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts6" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts7" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts8" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="exts9" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="extl10" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="extl11" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="extl12" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="extd13" type="org.hibernate.type.TimestampType" />
+		<property name="extd14" type="org.hibernate.type.TimestampType" />
+		<property name="extd15" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.itlifter.employee.service.model.impl.CompanyTypeMasterImpl" table="employee_CompanyTypeMaster">
+		<cache usage="read-write" />
+		<id name="typeId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="TypeCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="TypeName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>
